@@ -7,6 +7,7 @@ public class ContaBancaria implements OperacoesConta{
 
 
 
+
     public ContaBancaria(String numeroConta, double saldo){
         this.numeroConta = numeroConta;
         this.saldo = saldo;
@@ -27,6 +28,10 @@ public class ContaBancaria implements OperacoesConta{
 
 
 
+        }
+    public void transferir(ContaBancaria destino , double valor){
+        sacar(valor);
+        destino.depositar(valor);
 
     }
 

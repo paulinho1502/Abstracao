@@ -5,6 +5,7 @@ public interface OperacoesConta {
     void sacar(double valor);
     double ConsultarSaldo();
     void exibirDados();
+    void transferir (ContaBancaria Destino ,double valor);
 
 
 
